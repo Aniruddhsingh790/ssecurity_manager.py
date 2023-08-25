@@ -4,8 +4,7 @@ import winreg
 import subprocess
 
 def block_usb_ports():
-    # TODO: Write code to block USB ports using the Windows Registry Editor
-      # Check if the user has administrative privileges
+    # code to block USB ports using the Windows Registry Editor
     if ctypes.windll.shell32.IsUserAnAdmin() == 0:
         print("Please run this program as an administrator.")
         return
@@ -27,7 +26,7 @@ def block_usb_ports():
     pass
 
 def disable_bluetooth():
-    # TODO: Write code to disable Bluetooth using the Windows Registry Editor
+    # code to disable Bluetooth using the Windows Registry Editor
     # Check if the user has administrative privileges
     if ctypes.windll.shell32.IsUserAnAdmin() == 0:
         print("Please run this program as an administrator.")
@@ -49,7 +48,7 @@ def disable_bluetooth():
     pass
 
 def disable_command_prompt():
-    # TODO: Write code to restrict access to the command prompt using Group Policy or other methods
+    # code to restrict access to the command prompt using Group Policy or other methods
     # Check if the user has administrative privileges
     if ctypes.windll.shell32.IsUserAnAdmin() == 0:
         print("Please run this program as an administrator.")
@@ -64,7 +63,7 @@ def disable_command_prompt():
     pass
 
 def block_website_access():
-    # TODO: Write code to block access to "facebook.com" by modifying the hosts file
+    #  code to block access to "facebook.com" by modifying the hosts file
     # Check if the user has administrative privileges
     if ctypes.windll.shell32.IsUserAnAdmin() == 0:
         print("Please run this program as an administrator.")
@@ -87,7 +86,7 @@ def block_website_access():
     pass
 
 def main():
-    # Call the functions to implement the security measures
+    # Calling the functions to implement the security measures which we have taken
     block_usb_ports()
     disable_bluetooth()
     disable_command_prompt()
